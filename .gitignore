@@ -1,0 +1,14 @@
+# Dados persistidos em runtime (não versionar)
+dados/
+
+# Build artifacts do backend
+backend/tratamentos-backend/target/
+backend/tratamentos-backend/dependency-reduced-pom.xml
+
+# IDEs
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

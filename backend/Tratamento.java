@@ -1,5 +1,4 @@
-    
-package com.saude.tratamentos.model;
+package modelo;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

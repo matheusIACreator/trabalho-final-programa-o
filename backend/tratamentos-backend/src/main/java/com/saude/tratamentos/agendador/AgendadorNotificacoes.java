@@ -1,14 +1,14 @@
 package com.saude.tratamentos.agendador;
 
-import com.saude.tratamentos.modelo.Tratamento;
-import com.saude.tratamentos.persistencia.RepositorioTratamentos;
-
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import com.saude.tratamentos.modelo.Tratamento;
+import com.saude.tratamentos.persistencia.RepositorioTratamentos;
 
 /**
  * Agendador que corre em background e verifica periodicamente (a cada 30s)

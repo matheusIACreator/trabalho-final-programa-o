@@ -1,4 +1,4 @@
-package com.saude.tratamentos.model;
+package modelo.interfaces;
 import java.time.LocalDateTime;
 
 public interface Agendavel {

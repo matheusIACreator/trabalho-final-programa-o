@@ -22,15 +22,15 @@ interface ScheduleItem {
 }
 
 const TIPO_COLOR: Record<Tratamento["tipo"], string> = {
-  medicamento_oral: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-  injecao: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-  injecao_insulina: "bg-violet-500/15 text-violet-400 border-violet-500/30",
+  medicamento_oral: "bg-sky-50 text-sky-700 border-sky-200 dark:bg-sky-500/15 dark:text-sky-300 dark:border-sky-500/30",
+  injecao: "bg-teal-50 text-teal-700 border-teal-200 dark:bg-teal-500/15 dark:text-teal-300 dark:border-teal-500/30",
+  injecao_insulina: "bg-violet-50 text-violet-700 border-violet-200 dark:bg-violet-500/15 dark:text-violet-300 dark:border-violet-500/30",
 }
 
 const TIPO_DOT: Record<Tratamento["tipo"], string> = {
-  medicamento_oral: "bg-blue-400",
-  injecao: "bg-orange-400",
-  injecao_insulina: "bg-violet-400",
+  medicamento_oral: "bg-sky-500",
+  injecao: "bg-teal-500",
+  injecao_insulina: "bg-violet-500",
 }
 
 function toDateStr(d: Date): string {

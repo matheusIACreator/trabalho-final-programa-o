@@ -18,9 +18,9 @@ import { cn } from "@/lib/utils"
 type NotificacaoHistorico = Notificacao & { confirmadaEm: string }
 
 const PRIO_CONFIG = {
-  3: { Icon: AlertTriangle, badge: "bg-red-500/15 text-red-400 border-red-500/30", dot: "bg-red-400", labelKey: "filterCritical" as const },
-  2: { Icon: BellRing,      badge: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30", dot: "bg-yellow-400", labelKey: "filterUrgent" as const },
-  1: { Icon: Bell,          badge: "bg-blue-500/15 text-blue-400 border-blue-500/30", dot: "bg-blue-400", labelKey: "filterNormal" as const },
+  3: { Icon: AlertTriangle, badge: "bg-red-50 text-red-700 border-red-200 dark:bg-red-500/15 dark:text-red-400 dark:border-red-500/30", dot: "bg-red-500", labelKey: "filterCritical" as const },
+  2: { Icon: BellRing,      badge: "bg-amber-50 text-amber-700 border-amber-200 dark:bg-yellow-500/15 dark:text-yellow-400 dark:border-yellow-500/30", dot: "bg-amber-500", labelKey: "filterUrgent" as const },
+  1: { Icon: Bell,          badge: "bg-sky-50 text-sky-700 border-sky-200 dark:bg-blue-500/15 dark:text-blue-400 dark:border-blue-500/30", dot: "bg-sky-500", labelKey: "filterNormal" as const },
 } as const
 
 type Filtro = "todas" | 1 | 2 | 3

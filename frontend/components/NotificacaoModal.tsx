@@ -16,9 +16,9 @@ interface Props {
 }
 
 const PRIORITY_CONFIG = {
-  3: { Icon: AlertTriangle, iconClass: "text-red-400", badgeClass: "bg-red-500/15 text-red-400 border border-red-500/30", labelKey: "labelCritical" as const },
-  2: { Icon: BellRing,      iconClass: "text-yellow-400", badgeClass: "bg-yellow-500/15 text-yellow-400 border border-yellow-500/30", labelKey: "labelUrgent" as const },
-  1: { Icon: Bell,          iconClass: "text-blue-400", badgeClass: "bg-blue-500/15 text-blue-400 border border-blue-500/30", labelKey: "labelNormal" as const },
+  3: { Icon: AlertTriangle, iconClass: "text-red-600 dark:text-red-400", badgeClass: "bg-red-50 text-red-700 border border-red-200 dark:bg-red-500/15 dark:text-red-400 dark:border-red-500/30", labelKey: "labelCritical" as const },
+  2: { Icon: BellRing,      iconClass: "text-amber-600 dark:text-yellow-400", badgeClass: "bg-amber-50 text-amber-700 border border-amber-200 dark:bg-yellow-500/15 dark:text-yellow-400 dark:border-yellow-500/30", labelKey: "labelUrgent" as const },
+  1: { Icon: Bell,          iconClass: "text-sky-600 dark:text-blue-400", badgeClass: "bg-sky-50 text-sky-700 border border-sky-200 dark:bg-blue-500/15 dark:text-blue-400 dark:border-blue-500/30", labelKey: "labelNormal" as const },
 } as const
 
 export function NotificacaoModal({ notificacao, onClose }: Props) {
@@ -49,7 +49,7 @@ export function NotificacaoModal({ notificacao, onClose }: Props) {
     <Dialog open onOpenChange={handleAdiar}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
+          <DialogTitle className="flex items-center gap-2 pr-8">
             <Icon className={`size-5 ${iconClass}`} />
             <span>{t("title")}</span>
             <span className={`ml-auto rounded-full px-2 py-0.5 text-xs font-medium ${badgeClass}`}>

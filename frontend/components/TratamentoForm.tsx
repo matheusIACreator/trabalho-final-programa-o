@@ -91,7 +91,7 @@ function AjusteInsulinaModal({ tratamentoId, open, onClose }: { tratamentoId: nu
       <DialogContent className="sm:max-w-sm">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <Calculator className="size-5 text-violet-400" />
+            <Calculator className="size-5 text-violet-700 dark:text-violet-400" />
             {t("calcTitle")}
           </DialogTitle>
         </DialogHeader>
@@ -102,9 +102,9 @@ function AjusteInsulinaModal({ tratamentoId, open, onClose }: { tratamentoId: nu
               onChange={(e) => { setGlicemia(e.target.value); setResultado(null) }} />
           </div>
           {resultado && (
-            <div className="rounded-lg border border-violet-500/30 bg-violet-500/10 p-4 text-center">
+            <div className="rounded-lg border border-violet-200 bg-violet-50 p-4 text-center dark:border-violet-500/30 dark:bg-violet-500/10">
               <p className="text-sm text-muted-foreground">{t("calcRecommended")}</p>
-              <p className="text-3xl font-bold text-violet-400">{resultado.unidadesRecomendadas} UI</p>
+              <p className="text-3xl font-bold text-violet-700 dark:text-violet-400">{resultado.unidadesRecomendadas} UI</p>
               <p className="mt-1 text-xs text-muted-foreground">{t("calcFor", { value: resultado.glicemia })}</p>
             </div>
           )}
@@ -296,7 +296,7 @@ export function TratamentoForm({ tratamento }: { tratamento?: Tratamento }) {
               </div>
               {tratamento && (
                 <Button type="button" variant="outline"
-                  className="w-full border-violet-500/30 text-violet-400 hover:bg-violet-500/10 hover:text-violet-400"
+                  className="w-full border-violet-300 text-violet-700 hover:bg-violet-50 hover:text-violet-800 dark:border-violet-500/30 dark:text-violet-400 dark:hover:bg-violet-500/10 dark:hover:text-violet-400"
                   onClick={() => setAjusteOpen(true)}>
                   <Calculator className="size-4" />{t("calcBtn")}
                 </Button>

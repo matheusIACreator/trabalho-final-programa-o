@@ -1,4 +1,4 @@
-package com.saude.tratamentos.model;
+package modelo;
 
 public class InjecaoInsulina extends Injecao {
     private String tipoInsulina; // Ex: Rápida, Lenta

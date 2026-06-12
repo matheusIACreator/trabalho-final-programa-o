@@ -1,4 +1,4 @@
-package com.saude.tratamentos.model;
+package modelo;
 
 import java.time.LocalDateTime;
 

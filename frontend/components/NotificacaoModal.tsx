@@ -49,7 +49,7 @@ export function NotificacaoModal({ notificacao, onClose }: Props) {
     <Dialog open onOpenChange={handleAdiar}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
+          <DialogTitle className="flex items-center gap-2 pr-8">
             <Icon className={`size-5 ${iconClass}`} />
             <span>{t("title")}</span>
             <span className={`ml-auto rounded-full px-2 py-0.5 text-xs font-medium ${badgeClass}`}>
